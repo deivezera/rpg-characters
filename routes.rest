@@ -1,0 +1,42 @@
+// LOCALHOST
+### Get all characters
+GET http://localhost:3000/characters
+
+
+### Get character by id
+GET http://localhost:3000/characters/679533be21e5822549b2a23a
+
+
+### Create character
+POST http://localhost:3000/characters HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Lyria Starfall",
+  "race": "Aasimar",
+  "class": "Paladin",
+  "appearance": "Radiant and ethereal, with golden skin and shimmering silver hair that flows like moonlight. Her eyes glow faintly with a celestial light, and she wears gleaming plate armor etched with holy symbols. Her longsword has a blade that glows softly in the dark.",
+  "originStory": "Born under a rare celestial alignment, Lyria was marked as a chosen of the gods. Raised in a monastery, she was trained to embody divine justice. When her homeland was invaded by a demonic horde, she swore an oath to vanquish all evil.",
+  "goals": "To rid the world of demonic corruption and to uncover the mystery of her celestial lineage.",
+  "personalityTraits": "Noble, compassionate, and unyielding in her pursuit of justice. She inspires others with her presence and unwavering conviction.",
+  "weaknesses": "Struggles with doubt when her moral compass is tested. Her high expectations for herself and others can lead to isolation."
+}
+
+
+### PUT character
+PUT http://localhost:3000/characters/679533ad21e5822549b2a23d HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Nimra Quickstep",
+  "race": "Halfling",
+  "class": "Bard",
+  "appearance": "Small and sprightly, with curly auburn hair and bright hazel eyes that twinkle with mischief. She wears colorful patchwork clothes adorned with bells and feathers, and her lute is covered in carvings of stories and symbols.",
+  "originStory": "Born into a traveling troupe of performers, Nimra grew up learning stories and songs from every corner of the world. When her troupe was ambushed by bandits, she swore to use her music to inspire hope and courage wherever she goes.",
+  "goals": "To collect and preserve forgotten stories and bring joy to those in need. She also dreams of writing a ballad that will be sung for centuries.",
+  "personalityTraits": "Optimistic, witty, and always ready with a joke or a song. She has a knack for lifting spirits, even in the darkest times.",
+  "weaknesses": "Overconfident in her charm, which can lead her into trouble. Her carefree nature sometimes makes her underestimate danger."
+}
+
+### DELETE character
+DELETE http://localhost:3000/characters/679533ad21e5822549b2a23d HTTP/1.1
