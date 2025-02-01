@@ -9,7 +9,7 @@ const getAll = async (req, res, next) => {
     const result = await mongodb.getDatabase().db().collection('histories').find();
     result.toArray()
       .then((histories) => {
-        if(histories.length){
+        if(!histories.length){
           return next(new AppError('history not found', 404));
         }
         res.setHeader('Contenct-Type', 'application/json');
