@@ -40,3 +40,39 @@ content-type: application/json
 
 ### DELETE character
 DELETE http://localhost:3000/characters/679533ad21e5822549b2a23d HTTP/1.1
+
+
+### Get all histories
+GET http://localhost:3000/histories
+
+
+### Get character by id
+GET http://localhost:3000/histories/679e3e4f4fbb6fa69cd873e2
+
+
+### Create character
+POST http://localhost:3000/histories HTTP/1.1
+content-type: application/json
+
+{
+  "title": "Echoes of the Forgotten",
+  "intro": "Deep within the ruins of an ancient empire, a strange phenomenon is occurring—shadows move on their own, and forgotten voices whisper in the wind.",
+  "description": "The players, explorers, mercenaries, or exiles, are drawn to the ruins after a royal decree offers a great reward for anyone who can uncover the truth behind the eerie disturbances.",
+  "world_description": "The world of Myrthas is a land of lost civilizations and lingering magic. Ruins of once-great cities hide secrets that could alter the course of history, but the deeper one delves, the more dangerous the journey becomes.",
+  "challenge": "As they piece together the forgotten past, the players will face a terrible choice—seal away a truth that could shake the foundations of the world or risk unleashing something beyond comprehension."
+}
+
+### PUT character
+PUT http://localhost:3000/histories/679e413a63cbc2f9922f143e HTTP/1.1
+content-type: application/json
+
+{
+  "title": "Iron and Ash",
+  "intro": "The age of war has ended, but peace remains fragile. In the city of Redspire, tensions simmer as noble houses, criminal syndicates, and rogue warlords vie for control of the crumbling empire’s remains.",
+  "description": "The players, each with their own pasts and allegiances, find themselves caught in the web of intrigue and bloodshed, forced to choose between loyalty, survival, or their own ambitions.",
+  "world_description": "Redspire is a city of towering spires and shadowed alleys, where steam-powered machines clash with old magic, and the line between hero and villain is razor-thin.",
+  "challenge": "To survive in this dangerous world, the players must outthink their enemies, forge uneasy alliances, and ultimately decide the fate of a kingdom on the brink of rebirth or ruin."
+}
+
+### DELETE character
+DELETE http://localhost:3000/histories/679e413a63cbc2f9922f143e HTTP/1.1
