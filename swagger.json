@@ -5,23 +5,12 @@
     "description": "RPG Characters Api",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "rpg-characters.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {
-    "/login": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
-      }
-    },
     "/characters/": {
       "get": {
         "tags": [
